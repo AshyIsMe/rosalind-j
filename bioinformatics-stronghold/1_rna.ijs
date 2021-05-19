@@ -29,4 +29,13 @@ GAUGGAACUUGACUACGUAAAUU
 
 
 sample =. 'GATGGAACTTGACTACGTAAATT'
+
 'U' (I. 'T'=sample)} sample
+
+NB. or probably more sensibly using the string library function
+sample rplc 'TU'
+
+NB. A Fold solution from jfondren in #jsoftware@freenode
+'' [ F.. {{ y,(x='T') { x,'U' }} sample
+
+rna =: 3 : 'y rplc ''TU'''
