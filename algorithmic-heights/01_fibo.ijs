@@ -44,3 +44,5 @@ NB. basic performance comparison
    timespacex 'fib M. 24'
 0.031901 12992
 )
+
+NB. Lot's more solutions available here: https://code.jsoftware.com/wiki/Essays/Fibonacci_Sequence
