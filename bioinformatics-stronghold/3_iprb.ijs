@@ -29,17 +29,17 @@ Sample Output
 )
 
 
-sample =. 2 2 2
+sample =: 2 2 2
 
 
-mendel =. monad define
-total =. +/y
-'k m n'=.y
+mendel =: monad define
+total =: +/y
+'k m n'=:y
 
-p2r=.(n%t) * ((n-1)%(t-1)) NB. prob 2 recessive parents
-p2h=.(m%t) * ((m-1)%(t-1)) NB. prob 2 heterozygous parents
-phr=.((n%t)*(m%(t-1))) + ((m%t)*(n%(t-1))) NB. prob 1 het 1 rec
+p2r=:(n%t) * ((n-1)%(t-1)) NB. prob 2 recessive parents
+p2h=:(m%t) * ((m-1)%(t-1)) NB. prob 2 heterozygous parents
+phr=:((n%t)*(m%(t-1))) + ((m%t)*(n%(t-1))) NB. prob 1 het 1 rec
 
-pr=.p2r + (p2h*1r4) + (phr*1r2) NB. prob recessive child of randomly selected pair
+pr=:p2r + (p2h*1r4) + (phr*1r2) NB. prob recessive child of randomly selected pair
 1-pr NB. complement is prob dominant child
 )

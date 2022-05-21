@@ -27,8 +27,11 @@ GAUGGAACUUGACUACGUAAAUU
 
 )
 
+NB. Set unlimited line length first
+9!:37 ] 0 _ _ _
 
-sample =. 'GATGGAACTTGACTACGTAAATT'
+
+sample =: 'GATGGAACTTGACTACGTAAATT'
 
 'U' (I. 'T'=sample)} sample
 
@@ -38,4 +41,6 @@ sample rplc 'TU'
 NB. A Fold solution from jfondren in #jsoftware@freenode
 '' [ F.. {{ y,(x='T') { x,'U' }} sample
 
-rna =: 3 : 'y rplc ''TU'''
+NB. rna =: 3 : 'y rplc ''TU'''
+
+rna =: 'TU'&stringreplace
