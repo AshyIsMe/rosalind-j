@@ -30,7 +30,7 @@ ACCGGGTTTT
 
 )
 
-sample =. 'AAAACCCGGT'
+sample =: 'AAAACCCGGT'
 |. (sample rplc 'GCTACGAT')
 
 revc =: 3 : '|. (y rplc ''GCTACGAT'')'
